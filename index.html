@@ -1,11 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Dashboard</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <h1 class="visually-hidden">Dashboard</h1>
+            <div class="row">
+                <div class="col-2 p-4 bg-primary">
+                    <a class="" href="#">
+                        <img src="./images/dashboard-logo.svg" alt="Dashboard logo" width="35" height="39">
+                    </a>
+                    <div class="mt-4 border-1 border-bottom border-white opacity-25"></div>
+                </div>
+                <div class="col header__col d-flex align-items-center justify-content-between">
+                    <h2 class="header__title m-0 fw-normal">Overview</h2>
+                    <div class="d-flex align-items-center">
+                        <button class="p-0 border-0 rounded">
+                            <img src="./images/Dashboard-header-btn.png" alt="Three points" width="67" height="36"
+                                srcset="./images/Dashboard-header-btn.png 1x, ./images/Dashboard-header-btn@2x.png 2x">
+                        </button>
+                        <button class="header__btn btn fw-bold border-0 rounded btn-info text-white">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 position-relative p-4 bg-primary">
+                        <div class="mb-4">
+                            <img src="./images/dashboard-hero-left-overview.png" alt="Overview image" width="21"
+                                height="24"
+                                srcset="./images/dashboard-hero-left-overview.png 1x, ./images/dashboard-hero-left-overview@2x.png 2x">
+                            <a class="hero__link text-white fw-bold text-decoration-none" href="#">Overview</a>
+                        </div>
+                        <div class="mb-4">
+                            <img src="./images/dashboard-hero-left-cloud.png" alt="Cloud image" width="24" height="19"
+                                srcset="./images/dashboard-hero-left-cloud.png 1x, ./images/dashboard-hero-left-cloud@2x.png 2x">
+                            <a class="hero__link text-white fw-bold text-decoration-none" href="#">Cloud</a>
+                        </div>
+                        <div class="mb-4">
+                            <img src="./images/dashboard-hero-left-sketch.png" alt="Sketch image" width="23" height="21"
+                                srcset="./images/dashboard-hero-left-sketch.png 1x, ./images/dashboard-hero-left-sketch@2x.png 2x">
+                            <a class="hero__link text-white fw-bold text-decoration-none" href="#">Sketch</a>
+                        </div>
+                        <div class="mb-4">
+                            <img src="./images/dashboard-hero-left-expriments.png" alt="Expriment image" width="22"
+                                height="24"
+                                srcset="./images/dashboard-hero-left-expriments.png 1x, ./images/dashboard-hero-left-expriments@2x.png 2x">
+                            <a class="hero__link text-white fw-bold text-decoration-none" href="#">Experiments</a>
+                        </div>
+                        <div class="mb-4">
+                            <img src="./images/dashboard-hero-left-security.png" alt="Security image" width="23"
+                                height="24"
+                                srcset="./images/dashboard-hero-left-security.png 1x, ./images/dashboard-hero-left-security@2x.png 2x">
+                            <a class="hero__link text-white fw-bold text-decoration-none" href="#">Security</a>
+                        </div>
+                        <div class="mb-4">
+                            <img src="./images/dashboard-hero-left-ovnership.png" alt="Overnship image" width="24"
+                                height="24"
+                                srcset="./images/dashboard-hero-left-ovnership.png 1x, ./images/dashboard-hero-left-ovnership@2x.png 2x">
+                            <a class="hero__link text-white fw-bold text-decoration-none" href="#">Ownership</a>
+                        </div>
+                        <div class="mb-4">
+                            <img src="./images/dashboard-hero-left-A-B-Test.png" alt="A/B test image" width="24"
+                                height="24"
+                                srcset="./images/dashboard-hero-left-A-B-Test.png 1x, ./images/dashboard-hero-left-A-B-Test@2x.png 2x">
+                            <a class="hero__link text-white fw-bold text-decoration-none" href="#">A/B Test</a>
+                        </div>
+                        <div class="mb-4">
+                            <img src="./images/dashboard-hero-left-colors.png" alt="Colors image" width="24" height="24"
+                                srcset="./images/dashboard-hero-left-colors.png 1x, ./images/dashboard-hero-left-colors@2x.png 2x">
+                            <a class="hero__link text-white fw-bold text-decoration-none" href="#">Colors</a>
+                        </div>
+                        <div class="position-absolute pb-5 bottom-0">
+                            <img src="./images/dashboard-hero-left-logout.png" alt="Logout image" width="21" height="23"
+                                srcset="./images/dashboard-hero-left-logout.png 1x, ./images/dashboard-hero-left-logout@2x.png 2x">
+                            <a class="hero__link text-white fw-bold text-decoration-none" href="#">Logout</a>
+                        </div>
+                    </div>
+                    <div class="col hero__col pt-2 pb-5">
+                        <div class="row hero__row">
+                            <div class="col-3">
+                                <p class="m-0 text-secondary fw-medium">Owner</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="text-secondary fw-medium">End date</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="text-secondary fw-medium">Profits</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="text-secondary fw-medium">Losses</p>
+                            </div>
+                            <div class="col-3">
+                                <p class="text-secondary fw-medium">Phone</p>
+                            </div>
+                        </div>
+                        <div class="row hero__row d-flex align-items-center">
+                            <div class="col-3 d-flex align-items-center">
+                                <img class="hero__img" src="./images/dashboard-hero-savannah.png" alt="Savannah image"
+                                    width="35" height="35"
+                                    srcset="./images/dashboard-hero-savannah.png 1x, ./images/dashboard-hero-savannah@2x.png 2x">
+                                <p class="hero__info hero__info--name m-0 text-dark fw-medium">Savannah Nguyen</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-dark fw-medium">1/15/12</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-success fw-medium">$328.85</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-danger fw-medium">$779.58</p>
+                            </div>
+                            <div class="col-3">
+                                <a class="heroo__info m-0 text-dark fw-medium text-decoration-none"
+                                    href="tel:(603) 555-0123">(603) 555-0123</a>
+                            </div>
+                        </div>
+                        <div class="row hero__row d-flex align-items-center">
+                            <div class="col-3 d-flex align-items-center">
+                                <img class="hero__img" src="./images/dashboard-hero-jenny.png" alt="Jenny image"
+                                    width="35" height="35"
+                                    srcset="./images/dashboard-hero-jenny.png 1x, ./images/dashboard-hero-jenny@2x.png 2x">
+                                <p class="hero__info hero__info--name m-0 text-dark fw-medium">Jenny Wilson</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-dark fw-medium">8/30/14</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-success fw-medium">$948.55</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-danger fw-medium">$589.99</p>
+                            </div>
+                            <div class="col-3">
+                                <a class="heroo__info text-dark fw-medium text-decoration-none"
+                                    href="tel:(629) 555-0129">(629) 555-0129</a>
+                            </div>
+                        </div>
+                        <div class="row hero__row d-flex align-items-center">
+                            <div class="col-3 d-flex align-items-center">
+                                <img class="hero__img" src="./images/dashboard-hero-annette.png" alt="Annatte"
+                                    width="35" height="35"
+                                    srcset="./images/dashboard-hero-annette.png 1x, ./images/dashboard-hero-annette@2x.png 2x">
+                                <p class="hero__info hero__info--name m-0 text-dark fw-medium">Annette Black</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-dark fw-medium">5/30/14</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-success fw-medium">$778.35</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-danger fw-medium">$948.55</p>
+                            </div>
+                            <div class="col-3">
+                                <a class="heroo__info text-dark fw-medium text-decoration-none"
+                                    href="tel:(308) 555-0121">(308) 555-0121</a>
+                            </div>
+                        </div>
+                        <div class="row hero__row d-flex align-items-center">
+                            <div class="col-3 d-flex align-items-center">
+                                <img class="hero__img" src="./images/dashboard-hero-kathryn.png" alt="Kathryn image"
+                                    width="35" height="35"
+                                    srcset="./images/dashboard-hero-kathryn.png 1x, ./images/dashboard-hero-kathryn@2x.png 2x">
+                                <p class="hero__info hero__info--name m-0 text-dark fw-medium">Kathryn Murphy</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-dark fw-medium">11/7/16</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-success fw-medium">$169.43</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-danger fw-medium">$202.87</p>
+                            </div>
+                            <div class="col-3">
+                                <a class="heroo__info text-dark fw-medium text-decoration-none"
+                                    href="tel:(302) 555-0107">(302) 555-0107</a>
+                            </div>
+                        </div>
+                        <div class="row hero__row d-flex align-items-center">
+                            <div class="col-3 d-flex align-items-center">
+                                <img class="hero__img" src="./images/dashboard-hero-cameron.png" alt="Cameron image"
+                                    width="35" height="35"
+                                    srcset="./images/dashboard-hero-cameron.png 1x, ./images/dashboard-hero-cameron@2x.png 2x">
+                                <p class="hero__info hero__info--name m-0 text-dark fw-medium">Cameron Williamson</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-dark fw-medium">7/27/13</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-success fw-medium">$782.01</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-danger fw-medium">$710.68</p>
+                            </div>
+                            <div class="col-3">
+                                <a class="heroo__info text-dark fw-medium text-decoration-none"
+                                    href="tel:(303) 555-0105">(303) 555-0105</a>
+                            </div>
+                        </div>
+                        <div class="row hero__row d-flex align-items-center">
+                            <div class="col-3 d-flex align-items-center">
+                                <img class="hero__img" src="./images/dashboard-hero-kristin.png" alt="Kristin"
+                                    width="35" height="35"
+                                    srcset="./images/dashboard-hero-kristin.png 1x, ./images/dashboard-hero-kristin@2x.png 2x">
+                                <p class="hero__info hero__info--name m-0 text-dark fw-medium">Kristin Watson</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-dark fw-medium">5/19/12</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-success fw-medium">$767.50</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-danger fw-medium">$779.58</p>
+                            </div>
+                            <div class="col-3">
+                                <a class="heroo__info text-dark fw-medium text-decoration-none"
+                                    href="tel:(225) 555-0118">(225) 555-0118</a>
+                            </div>
+                        </div>
+                        <div class="row hero__row d-flex align-items-center">
+                            <div class="col-3 d-flex align-items-center">
+                                <img class="hero__img" src="./images/dashboard-hero-eleanor.png" alt="Eleanor"
+                                    width="35" height="35"
+                                    srcset="./images/dashboard-hero-eleanor.png 1x, ./images/dashboard-hero-eleanor@2x.png 2x">
+                                <p class="hero__info hero__info--name m-0 text-dark fw-medium">Eleanor Pena</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-dark fw-medium">8/21/15</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-success fw-medium">$475.22</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-danger fw-medium">$219.78</p>
+                            </div>
+                            <div class="col-3">
+                                <a class="heroo__info text-dark fw-medium text-decoration-none"
+                                    href="tel:(205) 555-0100">(205) 555-0100</a>
+                            </div>
+                        </div>
+                        <div class="row hero__row d-flex align-items-center">
+                            <div class="col-3 d-flex align-items-center">
+                                <img class="hero__img" src="./images/dashboard-hero-guy.png" alt="Guy image" width="35"
+                                    height="35"
+                                    srcset="./images/dashboard-hero-guy.png 1x, ./images/dashboard-hero-guy@2x.png 2x">
+                                <p class="hero__info hero__info--name m-0 text-dark fw-medium">Guy Hawkins</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-dark fw-medium">5/27/15</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-success fw-medium">$576.28</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-danger fw-medium">$446.61</p>
+                            </div>
+                            <div class="col-3">
+                                <a class="heroo__info text-dark fw-medium text-decoration-none"
+                                    href="tel:(207) 555-0119">(207) 555-0119</a>
+                            </div>
+                        </div>
+                        <div class="row hero__row d-flex align-items-center">
+                            <div class="col-3 d-flex align-items-center">
+                                <img class="hero__img" src="./images/dashboard-hero-brooklyn.png" alt="Brooklyn image"
+                                    width="35" height="35"
+                                    srcset="./images/dashboard-hero-brooklyn.png 1x, ./images/dashboard-hero-brooklyn@2x.png 2x">
+                                <p class="hero__info hero__info--name m-0 text-dark fw-medium">Brooklyn Simmons</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-dark fw-medium">3/4/16</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-success fw-medium">$219.78</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-danger fw-medium">$928.41</p>
+                            </div>
+                            <div class="col-3">
+                                <a class="heroo__info text-dark fw-medium text-decoration-none"
+                                    href="tel:(201) 555-0124">(201) 555-0124</a>
+                            </div>
+                        </div>
+                        <div class="row hero__row d-flex align-items-center">
+                            <div class="col-3 d-flex align-items-center">
+                                <img class="hero__img" src="./images/dashboard-hero-robert.png" alt="Robert image"
+                                    width="35" height="35"
+                                    srcset="./images/dashboard-hero-robert.png 1x, ./images/dashboard-hero-robert@2x.png 2x">
+                                <p class="hero__info hero__info--name m-0 text-dark fw-medium">Robert Fox</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-dark fw-medium">4/4/18</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-success fw-medium">$202.87</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="heroo__info m-0 text-danger fw-medium">$275.43</p>
+                            </div>
+                            <div class="col-3">
+                                <a class="heroo__info text-dark fw-medium text-decoration-none"
+                                    href="tel:(684) 555-0102">(684) 555-0102</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between m-auto mt-3 w-25">
+                            <a href="#">
+                                <img src="./images/dashboard-hero-sign-left.png" alt="Sign left" width="21" height="21"
+                                    srcset="./images/dashboard-hero-sign-left.png 1x, ./images/dashboard-hero-sign-left@2x.png 2x">
+                            </a>
+                            <a class="hero__bottom-number text-decoration-none text-dark bg-light rounded fw-medium"
+                                href="#">1</a>
+                            <p class="hero__bottom-text m-0 text-dark fw-medium">of</p>
+                            <a class="hero__bottom-number text-decoration-none text-dark bg-light rounded fw-medium"
+                                href="#">4</a>
+                            <a href="#">
+                                <img src="./images/dashboard-hero-sign-right.png" alt="Sign right" width="21"
+                                    height="21"
+                                    srcset="./images/dashboard-hero-sign-right.png 1x, ./images/dashboard-hero-sign-right@2x.png 2x">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
